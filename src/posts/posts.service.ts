@@ -1,6 +1,6 @@
 import { Get, Headers, HttpException, Injectable } from '@nestjs/common';
 import { decode, verify } from 'jsonwebtoken';
-import { prisma } from 'src/prisma';
+import { prisma } from '../prisma';
 
 @Injectable()
 export class PostsService {

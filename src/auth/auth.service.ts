@@ -2,7 +2,7 @@ import { HttpException, Injectable } from '@nestjs/common';
 import { compare, hash } from 'bcrypt';
 import { Response } from 'express';
 import { sign } from 'jsonwebtoken';
-import { prisma } from 'src/prisma';
+import { prisma } from '../prisma';
 
 @Injectable()
 export class AuthService {
